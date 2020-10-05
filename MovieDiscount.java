@@ -1,47 +1,53 @@
 /*
- * Programmer:
- * Date:
+ * Programmer:Melique.williams
+ * Date:Monday,October 5,2020
  * Purpose:
  */
 
 import java.util.Scanner;
 
 public class MovieDiscount {
-    public static void main (String [] args) {
-        // Create the input scanner
-        Scanner input = new Scanner(System.in);
+	public static void main (String [] args) {
 
-        // Ask the user for the side lengths
-        System.err.print("How old are you? ");
-        int age = input.nextInt();
-        
-        double cost = 14.50 ;
-        // Ask the user if they have a coupon
-        System.err.print("Do you have a coupon? [true/false] ");
-        
-        // Read in a true/false value
-       
-        boolean hasCoupon = input.nextBoolean();
-        if(age < 13 && age >=65); {
-            cost = 11.50 ;
-            System.out.print("Your ticker costs " + cost);
-            else
-        }
-        if (hasCoupon == true) {
-        	cost = 12.50 ;
-        	else{
-        }
-        	else{ (hasCoupon == false); 
-        		cost = 14.50 ;
-        		}
-        
-        // Print the cost of a movie ticket 
-        if(age < 13 && age >=65 == hasCoupon)
-        System.out.print("Your ticker costs " + cost);
-  
-    
-        // TODO: Figure out the cost and print it
- 
-    	
-    }
+		// Create the input scanner
+		Scanner input = new Scanner(System.in);
+
+		// Getting user inputs age
+		System.err.print("How old are you? ");
+		int age = input.nextInt();
+
+
+		// Ask the user if they have a coupon
+		System.err.print("Do you have a coupon? [true/false] ");
+
+		// Finding out if user has Coupon
+		boolean hasCoupon = input.nextBoolean();
+
+		if (age < 13 || age >= 65) {
+			if(hasCoupon) {
+				System.out.println("Your ticket costs $ 9.5." );
+			}
+			else {
+				System.out.println("Your ticket costs $11.5.");
+			}
+		}
+
+		else { 
+			if(hasCoupon) {
+
+				System.out.println("Your ticket costs $12.5.");
+			}
+			else {
+				System.out.println("Your ticket costs $14.5.");
+			}
+
+		}
+
+
+
+
+
+
+
+	}
 }
